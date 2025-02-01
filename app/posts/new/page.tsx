@@ -24,7 +24,7 @@ export default function NewPostPage() {
       alert("投稿に失敗しました: " + error.message);
     } else {
       // 投稿完了後、トップページへリダイレクト
-      router.push("/");
+      router.push("/posts/list");
     }
     setLoading(false);
   };
